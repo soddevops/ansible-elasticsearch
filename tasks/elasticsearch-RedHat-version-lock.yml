@@ -44,4 +44,4 @@
   when:
     - not es_version_lock
     - es_version_locked is defined
-    - es_version_locked.stdout|int > 0
+    - es_version_locked | int > 0
