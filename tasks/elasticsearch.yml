@@ -1,9 +1,9 @@
 ---
 
 - name: Include specific Elasticsearch
-  ansible.builtin.include_tasks: elasticsearch-Debian.yml
+  include: elasticsearch-Debian.yml
   when: ansible_os_family == 'Debian'
 
 - name: Include specific Elasticsearch
-  ansible.builtin.include_tasks: elasticsearch-RedHat.yml
+  include: elasticsearch-RedHat.yml
   when: ansible_os_family == 'RedHat'

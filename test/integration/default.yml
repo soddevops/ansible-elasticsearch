@@ -2,6 +2,6 @@
 - name: Setup Elasticsearch using default configuration
   hosts: localhost
   post_tasks:
-    - ansible.builtin.include_tasks: elasticsearch/test/integration/debug.yml
+    - include: elasticsearch/test/integration/debug.yml
   roles:
     - elasticsearch
