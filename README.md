@@ -427,7 +427,7 @@ These can either be set to a user declared in the file based realm, with admin p
 
 ### Additional Configuration
 
-In addition to es_config, the following parameters allow the customization of the Java and Elasticsearch versions as well as the role behavior. Options include:
+In addition to es_config, the following parameters allow the customization of the Java and Elasticsearch versions as well as the role behavior. Options ansible.builtin.include_tasks:
 
 * ```oss_version```  Default `false`. Setting this to `true` will install the oss release of Elasticsearch (for version <7.11.0 only).
 * `es_xpack_trial` Default `false`. Setting this to `true` will start the 30-day trail once the cluster starts.
